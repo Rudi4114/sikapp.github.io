@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <title>SISTEM INFORMASI PENGAMANAN DALAM</title>
+  <meta content="SIPANDA" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet" />
+
+   <script src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body id="background">
+  <div id="box">
+    <h3>Jadwal Rolling Lantai</h3>
+    <script>
+        /*!
+ * 
+ * Google Sheets To HTML v0.9b
+ * 
+ * To use, simply replace the "tq?key=" value in the
+ * URL below with your own unique Google document ID
+ * 
+ * The Google document's sharing must be set to public
+ * 
+ */
+
+google.charts.load('current', {packages: ['table']});
+var visualization;
+
+function drawVisualization() {
+  var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1kHtOJ8fEZrMuM4R2ccsfNG7GhBXd5TDAyM4i5ZgaGpw/edit?gid=1970619928#gid=1970619928');
+    query.setQuery('SELECT A, B, C, D, E, F, G');
+    query.send(handleQueryResponse);
+   
+}
+
+function handleQueryResponse(response) {
+    if (response.isError()) {
+        alert('There was a problem with your query: ' + response.getMessage() + ' ' + response.getDetailedMessage());
+        return;
+    }
+    
+    var data = response.getDataTable();
+    visualization = new google.visualization.Table(document.getElementById('table'));
+    visualization.draw(data, {
+        allowHtml: true,
+        legend: 'bottom'
+    });
+}
+google.setOnLoadCallback(drawVisualization);
+    </script>
+    <div id="table">
+    </div>
+    <p class="small"></p>
+  </div>
+</body>
+</html>
