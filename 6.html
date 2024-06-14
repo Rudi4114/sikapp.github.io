@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta content="ie=edge" http-equiv="x-ua-compatible">
-  <title>SIMONAKIDAL</title>
-  <meta content="SIMONAKIDAL" name="description">
+  <title>SIKAPP</title>
+  <meta content="SIKAPP" name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" />
@@ -32,7 +32,7 @@ google.charts.load('current', {packages: ['table']});
 var visualization;
 
 function drawVisualization() {
-  var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1a9zRaD9U7jahmV6_elxAynSBXuwWqCzW--4hK7arP98&output=html&gid=0&range=A2:H&&usp=sharing');
+  var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1wYeYx2RQeX9Cp-uXNGV3M6orTmXKJqqY8XeplH4qWcc&output=html&gid=0&range=A2:H&&usp=sharing');
     query.setQuery('SELECT A, C, D, E, F, B, G, H  label A "ID", C "Kode", D "Area", E "Nama Pekerjaan", F "Petugas", B "Pelaksanaan", G "Status", H "Nilai"');
     query.send(handleQueryResponse);
    

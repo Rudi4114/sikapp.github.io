@@ -32,8 +32,8 @@ google.charts.load('current', {packages: ['table']});
 var visualization;
 
 function drawVisualization() {
-  var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=174b_v9bWbu5iIweWR77i8upig_xOJuK0Oqxg5g7W4xo&output=html&gid=1970619928&range=A2:G&&usp=sharing');
-    query.setQuery('SELECT A, B, C, D, E, F, G  label A "Tanggal", B "SOL", C "BAR", D "RON", E "TRI", F "ALFN", G "TRIS"');
+  var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1uG9sgqpcLyENmnHCwPv4BiyUZoKjwhL7doo9-Dm_Cjs&output=html&gid=1461781624&range=A2:G&&usp=sharing');
+    query.setQuery('SELECT A, B, C, D, E, F, G  label A "Tanggal", B "KERIS", C "MUS", D "AKBAR", E "BENY"');
     query.send(handleQueryResponse);
    
 }

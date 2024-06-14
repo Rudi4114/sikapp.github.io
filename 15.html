@@ -5,7 +5,7 @@
   <base target="_top">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rekap Pekerjaan - SIMONAKIDAL</title>
+  <title>Rekap Pekerjaan - SIKAPP</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
   <link href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css" rel="stylesheet">
@@ -80,7 +80,7 @@
     google.charts.load('current', { packages: ['table'] });
 
     function drawVisualization() {
-      var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1a9zRaD9U7jahmV6_elxAynSBXuwWqCzW--4hK7arP98&output=html&gid=168874928&range=A2:H&&usp=sharing');
+      var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1wYeYx2RQeX9Cp-uXNGV3M6orTmXKJqqY8XeplH4qWcc&output=html&gid=168874928&range=A2:H&&usp=sharing');
       query.setQuery('SELECT A, C, D, E, F, B, G, H');
       query.send(handleQueryResponse);
     }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="ie=edge" http-equiv="x-ua-compatible">
-  <title>SISTEM INFORMASI PENGAMANAN DALAM</title>
+  <title>JADWAL ROLING LANTAI</title>
   <meta content="SIPANDA" name="description">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
@@ -32,7 +32,7 @@ google.charts.load('current', {packages: ['table']});
 var visualization;
 
 function drawVisualization() {
-  var query = new google.visualization.Query('https://docs.google.com/spreadsheets/d/1kHtOJ8fEZrMuM4R2ccsfNG7GhBXd5TDAyM4i5ZgaGpw/edit?gid=1970619928#gid=1970619928');
+  var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1wYeYx2RQeX9Cp-uXNGV3M6orTmXKJqqY8XeplH4qWcc&output=html&gid=1970619928&range=A1:G&&usp=sharing');
     query.setQuery('SELECT A, B, C, D, E, F, G');
     query.send(handleQueryResponse);
    
